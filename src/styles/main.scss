@@ -7,3 +7,39 @@ body {
   text-align: center;
   margin-top: 100px;
 }
+
+#navigation {
+  padding-bottom: 10px;
+}
+
+#bio, #projects, #tech {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 500px;
+}
+
+#tech li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 25px;
+  background-color: black;
+}
+
+#dom-footer {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    
+     li {
+      margin: 0 10px;
+    }
+  }

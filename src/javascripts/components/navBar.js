@@ -15,13 +15,13 @@ const navBar = () => {
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Bio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#bio">Bio <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="#projects">Projects</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Technologies</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="#tech">Technologies</a>
       </li>
     </ul>
   </div>
@@ -30,7 +30,7 @@ const navBar = () => {
 
 const createFooter = () => {
   document.querySelector('#footer').innerHTML = `<footer>
-    <ul class="fixed-bottom d-flex flex-row justify-content-evenly">
+    <ul id="dom-footer" class="d-flex flex-row justify-content-evenly">
       <li>&#169 Chris Meffley 2021</li>
       <li><a href="https://github.com/cmeffley">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/cmeffley/">LinkedIn</a></li>
