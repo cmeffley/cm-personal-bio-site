@@ -1,64 +1,51 @@
+import projectCards from '../../../images/productCards.png';
+
 const projects = [
   {
-    title: 'First Project',
-    screenshot: 'Pic here',
-    description: 'Decribe the what, why and how',
+    title: 'Product Cards',
+    screenshot: projectCards,
+    description: 'My first project, a static webpage showing bicycle product cards',
     technologiesUsed: 'HTML, CSS',
     available: true,
-    url: 'URL here',
-    githubUrl: 'github url here',
+    url: 'https://cm-product-cards.netlify.app/',
+    githubUrl: 'https://github.com/cmeffley/product-cards',
   },
   {
-    title: 'Second Project',
+    title: 'Pet Adoption',
     screenshot: 'Pic here',
-    description: 'Decribe the what, why and how',
-    technologiesUsed: 'HTML, CSS, Javacript, Github,  Bootstrap',
+    description: 'A single page application where you can look through animals to adopt: cats, dogs or dinosaurs.',
+    technologiesUsed: 'HTML, CSS, Javacript, Bootstrap',
     available: true,
-    url: 'URL here',
-    githubUrl: 'github url here',
+    url: 'https://cm-pet-adoption.netlify.app/',
+    githubUrl: 'https://github.com/cmeffley/pet-adoption',
   },
   {
-    title: 'Third Project',
+    title: 'Sorting Hat',
     screenshot: 'Pic here',
-    description: 'Decribe the what, why and how',
-    technologiesUsed: 'HTML,CSS, Javacript',
+    description: 'Click the Let\'s Sort button to show a name entry form and then be randomly assigned to a Hogwart\'s house.',
+    technologiesUsed: 'HTML, CSS, Javacript',
     available: true,
-    url: 'URL here',
-    githubUrl: 'github url here',
+    url: 'https://cm-sorting-hat.netlify.app/',
+    githubUrl: 'https://github.com/cmeffley/sorting-hat',
   },
   {
-    title: 'Fourth Project',
+    title: 'Bear Watcher',
     screenshot: 'Pic here',
-    description: 'Decribe the what, why and how',
-    technologiesUsed: 'HTML,CSS, Javacript',
-    available: true,
-    url: 'URL here',
-    githubUrl: 'github url here',
+    description: 'Add the name and image url of a bear that is seen on th banks of the Broks River in Katmai National Park.',
+    technologiesUsed: 'HTML, CSS, Javacript Modules',
+    available: false,
+    url: 'https://cm-bearwatcher.netlify.app',
+    githubUrl: 'https://github.com/cmeffley/ASSIGNMENT-Bear-Watcher',
   },
   {
-    title: 'Fifth Project',
+    title: 'Tamagotchi',
     screenshot: 'Pic here',
-    description: 'Decribe the what, why and how',
-    technologiesUsed: 'HTML,CSS, Javacript',
+    description: 'A simplified version of the 90s hand-held game. Keep track of your points for four different activities: Eat, Play, Fight and Sleep.',
+    technologiesUsed: 'HTML, CSS, Javacript Modules',
     available: true,
-    url: 'URL here',
-    githubUrl: 'github url here',
+    url: 'https://cm-tamagotchi.netlify.app/',
+    githubUrl: 'https://github.com/cmeffley/ASSIGNMENT-Tamagotchi',
   },
 ];
 
-const createProjectsCards = () => {
-  projects.forEach((element, i) => {
-    document.querySelector('#cards').innerHTML += `<div class="card " style="width: 18rem;" id=${i}>
-    <div class="img-container" style="background-image: url('${element.imageUrl}');"></div>
-    <div class="card-body">
-      <p class="card-text">${element.title}</p>
-      <p class="card-text">${element.description}</p>
-      <p class="card-text">${element.technologiesUsed}</p>
-      <p class="card-text">${element.url}</p>
-      <p class="card-text">${element.githubUrl}</p>
-     </div>
- </div>`;
-  });
-};
-
-export default createProjectsCards;
+export default projects;
