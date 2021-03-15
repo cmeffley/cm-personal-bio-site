@@ -1,7 +1,5 @@
-import projects from '../helpers/data/projectData';
-
-const createProjectsCards = () => {
-  projects.forEach((element) => {
+const createProjectsCards = (array) => {
+  array.forEach((element) => {
     document.querySelector('#projects').innerHTML += `<div class="card" style="width: 18rem;" id="card-id">
     <img class="card-img-top" src="${element.screenshot}" alt="Screenshot of application">
     <div class="card-body">
