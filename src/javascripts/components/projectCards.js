@@ -1,4 +1,4 @@
-const createProjectsCards = (array) => {
+const showProjectsCards = (array) => {
   array.forEach((element) => {
     document.querySelector('#projects').innerHTML += `<div class="card" style="width: 18rem;" id="card-id">
     <img class="card-img-top" src="${element.screenshot}" alt="Screenshot of application">
@@ -13,4 +13,4 @@ const createProjectsCards = (array) => {
   });
 };
 
-export default createProjectsCards;
+export default showProjectsCards;
