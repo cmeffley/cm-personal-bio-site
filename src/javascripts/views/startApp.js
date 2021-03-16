@@ -4,10 +4,12 @@ import showProjectsCards from '../components/projectCards';
 import aboutMe from '../components/bio';
 import techUsed from '../components/technology';
 import getAllProjects from '../helpers/data/projectData';
+import homeLanding from '../components/home';
 
 const startApp = () => {
   domBuilder();
   navBar();
+  homeLanding();
   createFooter();
   aboutMe();
   getAllProjects().then((response) => {
