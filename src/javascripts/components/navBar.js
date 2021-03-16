@@ -15,6 +15,9 @@ const navBar = () => {
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
+      <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
         <a class="nav-link" href="#bio">Bio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
@@ -33,7 +36,7 @@ const createFooter = () => {
     <ul id="dom-footer" class="d-flex flex-row justify-content-evenly">
       <li>&#169 Chris Meffley 2021</li>
       <li><a href="https://github.com/cmeffley">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/cmeffley/">LinkedIn</a></li>
+      <li><a href="https://www.linkedin.com/in/chrismeffley/">LinkedIn</a></li>
     </ul>
   </footer>`;
 };

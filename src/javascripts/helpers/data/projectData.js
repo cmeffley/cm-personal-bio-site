@@ -14,4 +14,15 @@ const getAllProjects = () => new Promise((resolve, reject) => {
     }).catch((error) => reject(error));
 });
 
-export default getAllProjects;
+const getTechUsed = () => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/tech.json`)
+    .then((response) => {
+      if (response.data) {
+        resolve(Object.values(response.data));
+      } else {
+        resolve([]);
+      }
+    }).catch((error) => reject(error));
+});
+
+export { getAllProjects, getTechUsed };
