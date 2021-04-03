@@ -1,7 +1,6 @@
 const navBar = () => {
   document.querySelector('#navigation').innerHTML = `
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Chris Meffley</a>
   <button 
     class="navbar-toggler" 
     type="button" 
